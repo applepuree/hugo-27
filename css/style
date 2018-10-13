@@ -128,15 +128,6 @@ body {
     }
   }
 
-  @keyframes signature-i {
-    0% {
-      stroke-dashoffset: 10;
-    }
-    100% {
-      stroke-dashoffset: 0;
-    }
-  }
-
 
   .yuli-ani,
   .sara-ani {
@@ -152,12 +143,6 @@ body {
     animation-fill-mode: forwards;
   }
 
-  .i-ani {
-    stroke-dasharray: 10;
-    stroke-dashoffset: 10;
-    animation: signature-i 0.5s 2.5s;
-    animation-fill-mode: forwards;
-  }
 
   .sara-ani {
     animation: signature 3s 5s;
@@ -180,6 +165,7 @@ body {
 
 
 }
+
 
 
 @keyframes eyes {
@@ -229,17 +215,27 @@ body {
     transform: scale(0.7);
     transform-origin: bottom;
   }
+
+  .dog {
+    width: 158px;
+    height: 300px;
+    background-image: url("../img/pug.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    animation: eyes 3s infinite;
+  }
+
+  .pics {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+  }
 }
 
-.dog {
-  width: 158px;
-  height: 300px;
-  background-image: url("../img/pug.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top left;
-  animation: eyes 3s infinite;
-}
 
 
 
